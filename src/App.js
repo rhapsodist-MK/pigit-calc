@@ -63,7 +63,7 @@ const App = () => {
 				<input
 					type="number"
 					value={buyCost}
-					onChange={(e) => setBuyCost(e.target.value)}
+					onChange={(e) => setBuyCost(parseFloat(e.target.value))}
 				/>{' '}
 				$
 			</div>
@@ -72,7 +72,7 @@ const App = () => {
 				<input
 					type="number"
 					value={sendOverseasCost}
-					onChange={(e) => setSendOverseasCost(e.target.value)}
+					onChange={(e) => setSendOverseasCost(parseFloat(e.target.value))}
 				/>{' '}
 				$
 			</div>
@@ -81,7 +81,7 @@ const App = () => {
 				<input
 					type="number"
 					value={exchangeRate}
-					onChange={(e) => setExchangeRate(e.target.value)}
+					onChange={(e) => setExchangeRate(parseFloat(e.target.value))}
 				/>{' '}
 				¥
 			</div>
@@ -90,7 +90,7 @@ const App = () => {
 				<input
 					type="number"
 					value={sendDorminateCost}
-					onChange={(e) => setSendDorminateCost(e.target.value)}
+					onChange={(e) => setSendDorminateCost(parseFloat(e.target.value))}
 				/>
 				¥
 			</div>
@@ -99,7 +99,7 @@ const App = () => {
 				<input
 					type="number"
 					value={getPer}
-					onChange={(e) => setGetPer(e.target.value)}
+					onChange={(e) => setGetPer(parseFloat(e.target.value))}
 				/>{' '}
 				%
 			</div>
@@ -108,7 +108,7 @@ const App = () => {
 				<input
 					type="number"
 					value={buymaPer}
-					onChange={(e) => setBuymaPer(e.target.value)}
+					onChange={(e) => setBuymaPer(parseFloat(e.target.value))}
 				/>{' '}
 				%
 			</div>
@@ -117,7 +117,7 @@ const App = () => {
 				<input
 					type="number"
 					value={tax}
-					onChange={(e) => setTax(e.target.value)}
+					onChange={(e) => setTax(parseFloat(e.target.value))}
 				/>{' '}
 				%
 			</div>
